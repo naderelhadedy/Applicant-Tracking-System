@@ -17,7 +17,7 @@ def decide_next_process():
     file_contents = input("Enter applicant's cv: \n")
     file_contents = file_contents.split()
     # store applicant's name
-    applicant_name = "{} {}".format(file_contents[0], file_contents[1])
+    applicant_name = f"{file_contents[0]} {file_contents[1]}"
     # a list to store matching words
     words = []
     
