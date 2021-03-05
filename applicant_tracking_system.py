@@ -1,6 +1,6 @@
 # decide_next_process function represents an applicant tracking system that takes your cv as an input and compare it with the wanted requirements and decide whether or not you pass to next step
 def decide_next_process():
-  """this function represents an applicant tracking system that takes your cv as an input and then
+    """this function represents an applicant tracking system that takes your cv as an input and then
      compare it with the wanted requirements and decide whether or not you pass to next step"""
     # a list of punctuations and uninteresting words you can use to process your text
     punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
@@ -45,11 +45,11 @@ def decide_next_process():
       result = "Didn't Pass Current Step"
 
     # format the output; name, matching requirements and final result
-    print("\n\033[1;34mApplicant:\033[0m {}".format(applicant_name))
+    print(f"\n\033[1;34mApplicant:\033[0m {applicant_name}")
     print("\033[1;31mMatching Requirements:\033[0m")
     for word in words:
-      print("{}".format(word.upper().center(25)))
-    print("\033[1;35mStatus:\033[0m {}".format(result))
+      print(f"{word.upper().center(25)}")
+    print(f"\033[1;35mStatus:\033[0m {result}")
     
 
 # call the function
